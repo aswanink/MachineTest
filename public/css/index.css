@@ -1,0 +1,30 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #13588F;
+}
+
+.card-text {
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #13588F;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #104372;
+}
