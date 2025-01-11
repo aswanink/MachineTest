@@ -115,9 +115,18 @@
                     <li class="nav-item">
                         <a class="nav-link active" href=#>Nearby Stores</a>
                     </li>
+                    
+                   
+
 
                     
                 </ul>
+                <center>
+                    <form action="{{ route('logout') }}" method="POST">
+    @csrf
+    <button type="submit" style="background:blue";>Logout</button>
+</form>
+    </center>
             </div>
         </div>
     </nav>

@@ -56,15 +56,21 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="home">HOME</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="nearbyStores">Nearby Stores</a>
-                </li>
-
+     
                 <!-- <li class="nav-item">
-                    <a class="nav-link " href="login">LOGIN</a>
+                    <a class="nav-link " href="nearbyStores">Nearby Stores</a>
                 </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link bg-primary" href="login">LOGIN</a>
+                </li>
                 
             </ul>
+            <!-- <form action="{{ route('login') }}" method="POST">
+    @csrf
+    <button type="submit">LOGIN</button>
+</form>
+    </center> -->
         </div>
     </div>
 </nav>
@@ -74,7 +80,7 @@
     <div class="text-center text-white">
         <h1 style="color:red;">Welcome to Stores.com</h1>
         <p style="color:black;">Find the nearest stores to your location</p>
-        <a href="nearbyStores" class="btn btn-warning btn-lg">Discover Nearby Stores</a>
+        <a href="login" class="btn btn-warning btn-lg">Discover Nearby Stores</a>
     </div>
 </div>
 

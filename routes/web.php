@@ -24,7 +24,17 @@ Route::get('home', function () {
     return view('nearbyStores');
   });
 
+  Route::get('login', function () {
+    return view('login');
+  });
 
+  Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+  Route::post('/login', [LoginController::class, 'login'])->name('login.submit');
+  Route::get('/nearbyStores', [LoginController::class, 'nearbyStores'])->name('nearbyStores');
+
+  Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
+ 
 
 Route::get('/adminadd', [StoreController::class, 'index'])->name('adminadd.index');
 Route::post('/adminadd', [StoreController::class, 'store'])->name('adminadd.store');
